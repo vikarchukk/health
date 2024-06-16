@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>health</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/andale-mono');
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'andale mono', monospace; font-size: 16px; }
+        body { min-width: fit-content; background-color: #eeeeee; color: #0d0d0d; }
+        .box { padding: 15px; display: flex; flex-direction: column; }
+        a { color: inherit; }
+
+        .tabs { width: 100%; }
+        .tabs_nav { display: flex; justify-content: space-between; }
+        .tabs_nav-btn {
+            flex: 1; font-size: 20px; text-align: left; padding: 10px 15px; cursor: pointer;
+            border: 1px solid #101010; border-top: 0; border-right: 0; 
+            background-color: #eeeeee; transition: all 250ms ease-in-out; }
+        .tabs_nav-btn:first-child { border-left: 0; }
+        .tabs_nav-btn.active { color: #eeeeee; background-color: #101010; }
+        .tabs_item { display: none; }
+        .tabs_item.active { display: block; }
+
+        .accordion_column { display: flex; flex-direction: column; gap: 15px; }
+        .accordion_item { max-width: fit-content; }
+        .accordion_header { border: 1px solid #101010; padding: 10px 15px; cursor: pointer; transition: all 250ms ease-in-out; }
+        .accordion_open .accordion_header { color: #eeeeee; background-color: #101010; }
+        .accordion_content { padding: 10px; display: none; }
+        .accordion_open .accordion_content { display: block; border: 1px solid #101010; }
+    </style>
+</head>
+<body>
+    <div class='tabs'>
+        <div class='tabs_nav'>
+            <button class='tabs_nav-btn active' data-tab='#health'>здоров'я</button>
+        </div>
+
+        <div class='tabs_content'>
+            <div class='tabs_item active' id='health'>
+                <div class='tabs'>
+                    <div class='tabs_nav'>
+                        <button class='tabs_nav-btn' data-tab='#body'>тіло</button>
+                        <button class='tabs_nav-btn' data-tab='#psyche'>психіка</button>
+                        <button class='tabs_nav-btn' data-tab='#drugs'>наркотики</button>
+                    </div>
+
+                    <div class='tabs_content'>
+                        <div class='tabs_item' id='body'>
+                            <div class='tabs'>
+                                <div class='tabs_nav'>
+                                    <button class='tabs_nav-btn' data-tab='#sport'>спорт</button>
+                                    <button class='tabs_nav-btn' data-tab='#food'>їжа</button>
+                                    <button class='tabs_nav-btn' data-tab='#sleep'>сон</button>
+                                    <button class='tabs_nav-btn' data-tab='#masturbation'>онанізм</button>
+                                </div>
+                                
+                                <div class='tabs_content'>
+                                    <div class="tabs_item" id="sport">
+                                        <div class="box">
+
+                                            <div class="accordion_column">
+
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">схема м'язів</div>
+                                                    <div class="accordion_content"> <img src="https://tvoetilo.com.ua/images/muskulatura_tila.jpg" style="max-width: 400px;"> </div>
+                                                </div>
+
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">лекції Селуянова</div>
+                                                    <div class="accordion_content">
+                                                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                                                            <a href="https://youtube.com/playlist?list=PLyAmsOgGjVDtF6Cire_-qs5m_ZkJRjfYv&si=4EiCR-RPd1AuCAqk" target="_blank">Тренування за Селуяновим</a>
+                                                            <a href="https://youtube.com/playlist?list=PLD-ysplZbBrDzuefsmPqgwQDB1-ArfWzL&si=iNpaWjdpdM5MMuN4" target="_blank">Наукові основи ОФК</a>
+                                                            <a href="https://youtube.com/playlist?list=PL1TESF5RAXyMbEbAPwLU5RMDl-0ng4qyL&si=zyoKyxfF2f4zps7V" target="_blank">Збірка відео</a>
+                                                            <a href="https://vk.com/wall-38310026_503049" target="_blank">Збірка статей</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <pre>
+
+# конспект на основі лекції '<a href="https://youtube.com/playlist?list=PLyAmsOgGjVDtF6Cire_-qs5m_ZkJRjfYv&si=4EiCR-RPd1AuCAqk" target="_blank">Тренування за Селуяновим</a>' відео 3
+
+</pre>
+
+                                            <div class="accordion_column">
+
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">схема м'яза</div>
+                                                    <div class="accordion_content">
+                                                        <pre>
+м'яз
+|
+| м'язове волокно [швидкий гліколітичний] (білий) (сила) | клітка
+| | міофібрила - скорочує м'яз (сила) | органела
+| | мітохондрія (дуже мало) - енергія | органела
+|
+| м'язове волокно [повільний окислювальний] (червоний) (витривалість) | клітка
+| | міофібрила - скорочує м'яз (сила) | органела
+| | мітохондрія (дуже багато) - енергія | органела
+|
+
+* можна збільшувати кількість міофібрил і мітохондрій
+</pre>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">табличка тренування</div>
+                                                    <div class="accordion_content">
+                                                        <pre>
+клітка | органила | фактори | інтинсивність | інтинсивність | тривалість | інтервал   | кількість  | кількість
+       |          |         | скорочення    | виконання     | виконання  | відпочинку | підходів   | тренуваннь
+       |          |         | м'язів (вага) | вправи        | вправи     |            | (повторів) | в тиждень
+-------|----------|---------|---------------|---------------|------------|------------|------------|-----------
+ГМВ    | МФ       | амк     | > 80%         | 10%           | до відмови | активний   | 1-3        | 7
+(швд)  |          | гормони |               |               | 6-12 раз   | 5-10 хв    | підтримує  |
+       |          | креатин |               |               | 20-40 сек  |            | 4-9        | 1 в 7/14
+       |          | ион вод |               |               |            |            | розвиває   |
+       |----------|---------|---------------|---------------|------------|------------|------------|-----------
+       | МТ       | амк     | 30%-50%       | 80%           | 10 раз     | 45-60 сек  | 30         | 4-14
+       |          | гормони |               |               | > 15 сек   |            |            |
+       |          | O₂      |               |               |            |            |            |
+       |          | ион вод |               |               |            |            |            |
+       |          | мало    |               |               |            |            |            |
+-------|----------|---------|---------------|---------------|------------|------------|------------|-----------
+ОМВ    | МФ       | амк     | 30%-60%       | < 50%         | до болі    | активний   | 1-3        | 7
+(пвн)  |          | гормони |               |               | 30-45 сек  | 5-10 хв    | підтримує  |
+       |          | креатин |               |               |            |            | 4-9        | 1 в 7/14
+       |          | ион вод |               |               |            |            | розвиває   |
+       |----------|---------|---------------|---------------|------------|------------|------------|-----------
+       | МТ       | амк     | після тренування ОМВ МФ з'являються нові міофібрили і біля них 
+       |          | гормони | - створюються нові метахондрії під час появлення O₂
+       |          | трохи   | - щоб получити O₂ потрібно бути 1:30 год в легкій робіто
+       |          | O₂      |
+       |          | ион вод |
+       |          | мало    |
+</pre>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">фактори для росту</div>
+                                                    <div class="accordion_content">
+                                                        <pre>
+1. амінокислоти (білок) (амк)
+
+   > без достатньої кількості білка м'яз не буде будуватися
+
+   > білок повиний бути твариного походження 'повний'
+     - м'ясо, м'ясо риби, яйця і молоко
+     - також є рослинного походження переважно 'неповний'
+       - бобові: соя, горох, квасоля, перлова крупа, гречка, пшоно і рис
+       - виняток є лише соя (і її похідні) та кіноа вони 'повні'
+
+   > для нормальної людини 1.5 г білка на кілограм ваги
+     - для спортсмена який тренується 2 рази на день і щодня потрібно 2-4 г
+
+   > харчова добавка: білкові суміші (яйцеві, гав'ядяні)
+     - найголовніше щоб це були не чисті амінокислоти а напіврозпадені
+       - напіврозпадені = (гідролізований / hydrolysis / hydro whey)
+     - тому що організм розуміє зчеплення амінокислот і засвоює 70%
+       - а не щепленні розуміє погано і засвоює 30%
+
+   > також плюс вітаміни
+
+2. гормони
+
+   > потрібна достатня кількість гормонів щоб ішов синтез м'язів
+     - для будови нових м'язів
+
+   > з'являється з гіпофіза під час стресу
+     - спричиненого підняттям великої ваги або сильним болем у м'язі
+
+   > якщо вимучити ендокринна система через багато стресу тоді вона буде зруйнована
+     - і якщо вона зруйнована то не буде через гіпофізу виділяти гормони
+     - але якщо її дати відпочинок 5-10 днів в місяць тоді вона буде в порядку
+     - ще можна пити добавки щоб підтримати її
+ 
+   > харчова добавка: левзея (має в собі також гармон тестостерона)
+     - добавки які містять гормони рослинного походження
+     - для підтримки м'язів, здоровл'я...
+
+3. вільний креатин
+ 
+   > у м'язовому волокні є креатинфосфат коли починаємо тренуватися він розпадається на
+     - креатин і фосфат, і цей вільний креатин працює як гармон
+     - вільний креатин і гормони діють на ДНК і змушують будувати міофібрили
+
+   > накопичується до максимуму коли м'язи під напругою понад 15 секунд
+
+4. ион водорода (іон водню / dihydrogen cation) (ион вод)
+
+   > основний фактор розвитку
+
+   > коли їх дуже багато це дуже шкідливо
+     - але існує оптимальна кількість (легке окислення)
+       - воно корисне, тоді краще працюють ферменти
+         - пори відкриваються в мембранах
+           - і тим самим допомагає проникнути гормонам
+
+   > іон водню накопичуються в ГМВ коли динамічне тренування (вага - більше 80% від максимуму)
+     - тому що ГМВ має дуже мало мітохондрій і не може переробити всі іон водню
+     - а в ОМВ не накопичуються в динамічному тренуванні тому що коли виконується
+       - динамічне тренування м'яз то напружується, то розслабляється і коли він
+       - розслабляється то мітохондрії (їх дуже багато) одразу переробляють всі іон водню
+
+   > іон водню накопичуються в ОМВ коли статодинамічне тренування (вага - 30%-60% від максимуму)
+     - тому що м'яз не розслабляється і мітохондрії не можуть переробити іон водню
+
+* ці всі факрори сприяють тому що дають сильний вплив на ДНК клітини
+  - і ДНК клітини відповідають тим що починають будувати нові міофібрили
+
+@ інтервал відпочинку
+
+  > потрібно відпочивати 5-10 хв щоб накопичилися креатинфосфат і мітохондрії
+    - і після підходу йде багато іон водню до м'язового волокна які починають руйнувати його
+      - тому відпочинок має бути активним щоб кров ходила по організм 
+      - і вимивала іон водню до серця та інших органів які перероблять його
+      - якщо цього не робити то іон водню залишатиметься в м'язовому волокні цілу годину
+      - коли виконуємо роботу то вони ще корисну а потім тільки шкодять
+
+@ кількість тренуваннь в тиждень
+
+  > коли 4-9 підходів то м'яз розвивається і потрібно тренуватися 1 раз на 7 днів або 15 днів
+    - тому що йде сигнал в ДНК що потрібно будувати м'яз і потрібно чикати поки м'яз побудується
+    - міофібрила будується 15 днів на 80-90%, і ще тих 10% будуються 90 днів
+      - міофібрила складається з кінців і середини
+        - середина це м'язова частина відновлюється скоро 10-15 днів
+        - а кінці це сухожилля відновлюються довго
+    - 15 днів відпочинку є в тренуванні ментцер
+</pre>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">вправи</div>
+                                                    <div class="accordion_content">
+                                                        <pre>
+плечі - армійський жим
+
+грудь - жим штанги
+
+спина - тяга штанги в нахилі
+
+руки -|- біципс - підйом штанги сидяче
+      |- тріципс - францюський жим гантелі стояче
+
+пресс -|- прямий - підйом ніг на перекладені
+       |- коссі - підйом ніг навкоса на перекладені
+
+ноги -|- основні - присяд зі штангою
+      |- ікри - підйом штанги
+</pre>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">харчування</div>
+                                                    <div class="accordion_content">
+                                                        <pre> </pre>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion_item">
+                                                    <div class="accordion_header">спалювання жиру</div>
+                                                    <div class="accordion_content">
+                                                        <pre>
+# <a href="https://youtu.be/WzXpRkRAHbg?si=oDWN4oEk17nEO7yF" target="_blank">оривок з лекції</a>
+
+м'язове волокно за 45 хв витрачає свої запаси
+потім потрібно почекати десь 30 хв поки з жирового депо жир перейде в кров 
+перетвориться на капільки і вони потраплять у м'язи і потім знову можна йти
+
+# [ 1 год йти ] -> [ 30хв відпочинок ] -> ... і так по кругу
+
+потрібно тренуватися тому що жир виходить під дією гормонів
+
+# після тренування нічого не їсти до того як лягти спати
+
+щоб не почуватися голодним потрібно вживати малі порції глюкози щоб мозок міг
+нормально працювати а тіло так може нормально працювати тому що воно може
+використовувати жир
+
+
+коли дуже голод можна зробити котрусь активність наприклад 20-30 стрібків тоді
+запускаєть викіт глюкози в кров з жирового депо
+
+# протягом дня вживати малі порції глюкози
+
+# або зробити котрусь активність під час відчуття голоду
+</pre>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class='tabs_item' id='food'>
+                                        <div class='tabs'>
+                                            <div class='tabs_nav'>
+                                                <button class='tabs_nav-btn' data-tab='#food_main'>головна</button>
+                                                <button class='tabs_nav-btn' data-tab='#list_of_food'>продукти</button>
+                                            </div>
+
+                                            <div class="tabs_content">
+                                                <div class="tabs_item" id="food_main">
+                                                    їжа
+                                                </div>
+                                                <div class="tabs_item" id="list_of_food">
+                                                    <div class="box">
+                                                        <span> продукт буде виглядати так назва (ua/eng) | білки | жири | вугливоди | калорії | грам і статус користі продукту і ціна</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class='tabs_item' id='sleep'>
+                                        <div class="box">
+                                            <pre>
+чиники котрі впливають на сон
+темнота
+прохолода, 1-2 години до сна 10 хвилин гар'ячого душу
+режим сна 11:30 до 7:30
+тривалість 5 - 8 годин
+харчування 3 години до сна
+спотр 5 годин до сна
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                    <div class='tabs_item' id='masturbation'>
+                                        спати ще щось
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class='tabs_item' id='psyche'>
+                            <div class='tabs'>
+                                <div class='tabs_nav'>
+                                    <button class='tabs_nav-btn' data-tab='#psyche_main'>головна</button>
+                                    <button class='tabs_nav-btn' data-tab='#diary'>щоденник</button>
+                                </div>
+
+                                <div class="tabs_content">
+                                    <div class="tabs_item" id="psyche_main">
+                                        щось про психологію
+                                    </div>
+                                    <div class="tabs_item" id="diary">
+                                        зібрати інформацію про це в ютубі
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='tabs_item' id='drugs'>
+                            <div class='tabs'>
+                                <div class='tabs_nav'>
+                                    <button class='tabs_nav-btn' data-tab='#alco'>алкоголь</button>
+                                    <button class='tabs_nav-btn' data-tab='#curinz'>куріння</button>
+                                </div>
+
+                                <div class="tabs_content">
+                                    <div class="tabs_item" id="alco">
+                                        vodka
+                                    </div>
+                                    <div class="tabs_item" id="diary">
+                                        viston siniy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.querySelectorAll('.tabs').forEach((tabL, i) => {
+        tabL.classList.add(`tab_${i}`);
+        const btns = document.querySelectorAll(`.tab_${i} > .tabs_nav > .tabs_nav-btn`);
+        const tabs = document.querySelectorAll(`.tab_${i} > .tabs_content > .tabs_item`);
+        btns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                let tab = document.querySelector(btn.getAttribute('data-tab'));
+
+                if(!btn.classList.contains('active')) {
+                    btns.forEach(function(i) { i.classList.remove('active'); });
+                    tabs.forEach(function(i) { i.classList.remove('active'); });
+                    btn.classList.add('active');
+                    tab.classList.add('active');
+                };
+            });
+        });
+    });
+
+    document.querySelectorAll('.accordion_header').forEach((i) => 
+		i.addEventListener('click', () => {
+			const p = i.parentNode;
+            p.classList.contains('accordion_open') ? p.classList.remove('accordion_open') : p.classList.add('accordion_open');
+		})
+	);
+</script>
+</body>
+</html>
